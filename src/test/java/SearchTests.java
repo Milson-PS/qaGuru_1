@@ -10,6 +10,6 @@ public class SearchTests {
     void successfulSearchTest() {
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=search]").shouldHave(text("https://ru.selenide.org"), Duration.ofSeconds(50));
+        $("[id=search???????]").shouldHave(text("https://ru.selenide.org"), Duration.ofSeconds(50));
     }
 }
